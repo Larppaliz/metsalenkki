@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="fi">
+<body>
+  <div class="background">
+    
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Luonto, Metsä, Eläimet, Suomi">
+    <meta name="author" content="Lari Lievonen">
+    <meta name="title" content="Suomi: Metsälennki">
+    <meta name="description" content="Pelissä sinun pitää etsiä metsästä eläimiä ja vastata kysmyksiä eläimistä että saat pisteitä.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="javascript/script.js"></script>
+
+    <title class="game-title">Metsälenkki Peli</title>
+
+    <div class="language-selector">
+      <button id="lang-fi" lang="fi">Suomi</button>
+      <button id="lang-en" lang="en">English</button>
+  </div>
+    <div class="MenuStuff">
+      <h1 id="menutext">Metsälenkki</h1>
+      <button id="start-game">Aloita peli</button>
+      <button id="game-tutorial-button">Peliohjeet</button>
+
+      <p class="credits1">
+      pelin tekijä: lari lievonen
+      </p><p class="credits2"> 
+      kuvat: pixabay.com
+      </p>
+      <p class="credits3"> 
+        eläinkirja tiedot: wikipedia.com
+        </p>
+    </div>
+    <div class="game-tutorial">
+      <div class="content">
+      <h2 id="tutorial-title">Peliohjeet</h2>
+      <p id="tutorial-instruction1">Liiku eteenpäin keskimmäisellä nuolella ja käänny eri suuntiiin vasemmalla ja oikealla olevilla nuolilla</p>
+      <img src="images/arrow.jpg" class="img">
+      <p id="tutorial-instruction2">Voit löytää eläimiä kääntymällä vasemmalle tai oikealle </p>
+      <img src="images/ohje.jpg" class="img">
+      <p id="tutorial-instruction3">
+        Kun löydät eläimen sinun pitää painaa etsi painikkeesta niin peli kysyy sinulta kysymyksiä.
+        Kun vastaat kymyksen oikein, saat pisteen.
+      </p>
+      <button id="close-tutorial">Sulje</button>
+      </div>
+    </div>
+      <button class="nav-button close-button" id="close-button">Sulje</button>
+      <button class="nav-button prev-button" id="prev-button">←</button>
+      <button class="nav-button first-page-button" id="first-page-button">←←</button>
+      <button class="nav-button next-button" id="next-button">→</button>
+    
+    <div class="animal-book" id="animal-book">
+      <div id="animal-content">
+        <div class="content">
+          <div class="page-picker">
+            <button class="animal-pick-button animal1" id="1">Metsäjänis</button>
+            <button class="animal-pick-button animal2" id="2">Orava</button>
+            <button class="animal-pick-button animal3" id="3">Metsämyyrä</button>
+            <button class="animal-pick-button animal4" id="4">Siili</button>
+            <button class="animal-pick-button animal5" id="5">Mäyrä</button>
+            <button class="animal-pick-button animal6" id="6">Näätä</button>
+            <button class="animal-pick-button animal7" id="7">Metsäkauris</button>
+            <button class="animal-pick-button animal8" id="8">Hirvi</button>
+          </div>
+          <div class="animal-container">
+            <img src="images/ohje.jpg" class="animal-photo" id="animal-img-left" />
+            <div class="animal-name" id="animal-name-left"></div>
+            <div class="animal-description" id="animal-description-left">
+              <p></p>
+            </div>
+          </div>
+          <div class="animal-container">
+            <div class="animal-description" id="animal-description-right">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="game-ui">    
+    <div class="ui-bar">
+      <p id="timer">00:00</p>
+      <p id="score">0/0</p>
+    </div>
+    <div class="game-buttons">
+      <button class="arrow-button" id="left">←</button>
+      <button class="arrow-button" id="up">↑</button>
+      <button class="arrow-button" id="down">↓</button>
+      <button class="arrow-button" id="right">→</button>
+      <button class="animal-button">Eläinkirja</button>
+      <button class="search-button">Etsi</button>
+      <button class="quick-game-tutorial-button">?</button>
+      <button class="quick-game-menu-button">X</button>
+    </div>
+    </div>
+
+    <div class="questions-screen">
+      <h1 id="question">Kysymys</h1>
+      <button id="answer1">Vastaus1</button>
+      <button id="answer2">Vastaus2</button>
+    </div>
+  </head>
+
+      
+</div>
+</body>
+</html>
